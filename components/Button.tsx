@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { StyleSheet, TouchableOpacity } from 'react-native';
-import { LinearGradient } from 'expo';
+import { LinearGradient } from 'expo-linear-gradient';
 import { theme } from '../constants';
 import { ButtonProps } from '../interfaces/ButtonProps';
 
-export default class Button extends Component<ButtonProps> {
-  defaultProps = {
+class Button extends Component<ButtonProps> {
+  static defaultProps = {
     startColor: theme.colors.primary,
     endColor: theme.colors.secondary,
     start: { x: 0, y: 0 },
@@ -70,6 +70,8 @@ export default class Button extends Component<ButtonProps> {
     )
   }
 }
+
+export default Button;
 
 const styles = StyleSheet.create({
   button: {

@@ -7,7 +7,7 @@ import Button from './Button';
 import { theme } from '../constants';
 import { InputProps } from '../interfaces/InputProps';
 
-export default class Input extends Component <InputProps> {
+export default class Input extends Component<InputProps> {
   state = {
     toggleSecure: false,
   }

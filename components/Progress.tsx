@@ -4,13 +4,13 @@ import { LinearGradient } from 'expo';
 import Block from './Block';
 import { ProgressProps } from '../interfaces/ProgressProps';
 
-export default class Progress extends Component<ProgressProps> {
-  defaultProps = {
+class Progress extends Component<ProgressProps> {
+  static defaultProps = {
     startColor: '#4F8DFD',
     endColor: '#3FE4D4',
     value: 0.75,
     opacity: 0.2,
-  }
+  };
   
   render() {
     const { startColor, endColor, value, opacity, style, ...props } = this.props;
@@ -31,6 +31,8 @@ export default class Progress extends Component<ProgressProps> {
     )
   }
 }
+
+export default Progress;
 
 const styles = StyleSheet.create({
   background: {
