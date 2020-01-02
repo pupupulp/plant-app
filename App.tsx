@@ -5,6 +5,7 @@ import { AppLoading } from 'expo';
 import { Asset } from 'expo-asset';
 
 import Navigation from './navigation/index';
+import { Block } from './components';
 
 export default class App extends React.Component {
   state = {
@@ -37,7 +38,9 @@ export default class App extends React.Component {
     }
 
     return (
-      <Navigation/>
+      <Block white>
+        <Navigation/>
+      </Block>
     );
   }
 }
